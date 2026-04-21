@@ -42,7 +42,8 @@ export async function GET(request: NextRequest) {
     }
 
     // Step 2: Build the photo media URL (Google redirects to the actual image)
-    const photoName = photos[0].name;
+    const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
+    const photoName = randomPhoto.name;
     const photoUrl = `https://places.googleapis.com/v1/${photoName}/media?maxWidthPx=1200&key=${PLACES_API_KEY}`;
 
     return Response.json({ photoUrl });
