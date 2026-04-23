@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function TitleScreen() {
@@ -22,6 +23,18 @@ export default function TitleScreen() {
         <p className="text-[var(--color-game-muted)] font-mono text-sm tracking-[0.3em] uppercase mb-4">
           International Bureau of Investigation
         </p>
+
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/habanera.png"
+            alt="Habanera Dallas"
+            width={180}
+            height={180}
+            className="rounded-full border-4 object-cover"
+            style={{ borderColor: 'var(--color-game-gold)' }}
+            priority
+          />
+        </div>
 
         <h1
           className="text-6xl md:text-8xl font-black tracking-tight mb-2 leading-none"
