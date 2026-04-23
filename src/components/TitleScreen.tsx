@@ -19,7 +19,7 @@ export default function TitleScreen() {
       {/* Red accent top bar */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-[var(--color-game-red)]" />
 
-      <div className="relative z-10 text-center max-w-2xl fade-in">
+      <div className="relative z-10 text-center max-w-2xl fade-in pb-16">
         <p className="text-[var(--color-game-muted)] font-mono text-sm tracking-[0.3em] uppercase mb-4">
           International Bureau of Investigation
         </p>
